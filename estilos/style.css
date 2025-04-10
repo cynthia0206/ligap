@@ -145,5 +145,22 @@ header .logo .img {
     /* espacio con la parte inferior */
     margin-bottom: 50px;
 }
-
+/* Estilos equipos */
+.main .equipos {
+    overflow: hidden;
+}
+.main .equipos .foto {
+    width: 25%;
+    float: left;
+}
+.main .equipos .foto img{
+    width: 100%;
+    vertical-align: top;
+    opacity: .7;
+}
+.main .equipos .foto img:hover{
+    opacity: 1;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
 
