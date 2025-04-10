@@ -8,33 +8,156 @@
     <link rel="stylesheet" href="estilos/style.css">
 
 </head>
-<header>
-    <!--Los atributos del menu-->
-    <div class="contenedor">
-        <nav class="menu">
-            <a href="#" id="btn-tabla-posiciones">Tabla de Posiciones</a>
-            <a href="#" id="btn-calendario">Calendario</a>
-            <a href="#" id="btn-partidos">Partidos</a>
-            <a href="#" id="btn-informacion">Información</a>
-        </nav>
-    </div>
-</header>
-<!--Seccion MAIN-->
-<section class="main">
-    <section class="tabla-posiciones" id="tabla-posiciones">
-        <div class="contenedor">
-            <div class="foto">
-                <img src="imagenes/CPA2.jpg" alt="Tabla de Posiciones">
-
-            </div>
-
-        
-        </div>
-
-    </section>
-
-</section>
 <body>
+    <header>
+        <!--Los atributos del menu-->
+        <div class="contenedor">
+            <nav class="menu">
+                <a href="#" id="btn-informacion">INFORMACIÓN</a>
+                <a href="#" id="btn-tabla-posiciones">TABLA DE POSICIONES</a>
+                <a href="#" id="btn-calendario">CALENDARIO</a>
+                <a href="#" id="btn-equipos">EQUIPOS</a>
+               
+            </nav>
+            <div class="texto">
+                <h1 class="nombre"> <span>LigaPro </span> Ecuabet </h1>
+                <nav class="logo"> 
+                        <img class="img" src="imagenes/LOGOS.png" alt="logo">
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--Seccion MAIN-->
+    <section class="main">
+        <section class="informacion" id="informacion">
+            <div class="contenedor">
+                <div class="foto">
+                    <img src="imagenes/fut.jpg" alt="Informacion">
     
+                </div>
+                <article>
+                    <h3 >INFORMACIÓN</h3>
+                    <p>
+                            Organizada por la Liga Profesional de Fútbol del Ecuador desde 2019, 
+                            y gestionada por la Federación Ecuatoriana de Fútbol, 
+                            la liga adoptó su formato actual en 2019, tras una reestructuración que
+                            permitió a la LigaPro manejar tanto la Serie A como la Serie B. 
+                            A lo largo de los años, ha tenido diversos patrocinadores, y en 2024, 
+                            con el patrocinio de Ecuabet, el torneo adoptó el nombre "LigaPro Ecuabet".
+                            Desde su creación, ha visto a varios clubes campeones, como Delfín SC, Barcelona SC,
+                            Independiente del Valle, Aucas y Liga de Quito, consolidándose como el certamen más 
+                            importante del fútbol ecuatoriano.
+                    </p>
+                </article>
+            </div>
+        </section>
+        <!-- Fin informacion  -->
+         <!-- Inicio Tabla de posiciones -->
+          <section class="tabla-posiciones" id="tabla-posiciones">
+            <div class="contenedor">
+                <div>
+                    <h1>TABLA DE POSICIONES</h1>
+                </div>
+            
+                <table class="tabla-liga">
+                    <thead> 
+                      <!-- La cabecera de la tabla -->
+                        <tr>
+                            <th>Pos.</th>
+                            <th>Equipo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                          <td>1</td><td>Barcelona Sporting Club</td>
+                        </tr>
+                        <tr>
+                          <td>2</td><td>Club Universidad Católica</td>
+                        </tr>
+                        <tr>
+                          <td>3</td><td>Club Independiente del Valle</td>
+                        </tr>
+                        <tr>
+                          <td>4</td><td>Vinotinto</td>
+                        </tr>
+                        <tr>
+                          <td>5</td><td>Liga Deportiva Universitaria</td>
+                        </tr>
+                        <tr>
+                          <td>6</td><td>Libertad Fútbol Club</td>
+                        </tr>
+                        <tr>
+                          <td>7</td><td>Orense Sporting Club</td>
+                        </tr>
+                        <tr>
+                          <td>8</td><td>Mushuc Runa Sporting Club</td>
+                        </tr>
+                        <tr>
+                          <td>9</td><td>Sociedad Deportiva Aucas</td>
+                        </tr>
+                        <tr>
+                          <td>10</td><td>Club Deportivo Macará</td>
+                        </tr>
+                        <tr>
+                          <td>11</td><td>Club Deportivo Cuenca</td>
+                        </tr>
+                        <tr>
+                          <td>12</td><td>Manta</td>
+                        </tr>
+                        <tr>
+                          <td>13</td><td>Club Técnico Universitario</td>
+                        </tr>
+                        <tr>
+                          <td>14</td><td>Delfín Sporting Club</td>
+                        </tr>
+                        <tr>
+                          <td>15</td><td>Club Sport Emelec</td>
+                        </tr>
+                        <tr>
+                          <td>16</td><td>Club Deportivo El Nacional</td>
+                        </tr>
+             </div>
+         </section>
+         <!-- fin tabla de posiciones  -->
+          <!-- incio de calendario  -->
+          <section>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>FECHA</th>
+                            <th>PARTIDO</th>
+                            <th>HORA</th>
+                            <th>ESTADIO</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01/05/2025</td>
+                            <td>Barcelona SC vs Liga de Quito</td>
+                            <td>19:00</td>
+                            <td>Estadio Monumental</td>
+                        </tr>
+                        <tr>
+                            <td>08/05/2025</td>
+                            <td>Macara vs Liga de Quito</td>
+                            <td>15:00</td>
+                            <td>Estadio Monumental</td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+          </section>
+          <!-- Fin calendario -->
+           <!-- incio equipos -->
+            <section class="equipos" id="equipos">
+                <div class="foto">
+                    <img src="" alt="">
+
+                </div>
+            </section>
+    </section>
+          
 </body>
 </html>

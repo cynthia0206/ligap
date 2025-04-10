@@ -1,0 +1,149 @@
+
+/* Resetear los margenes */
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* Elegir el tipo de letra principal, secundario y terciario */
+body{
+    font-family:"Open Sans", Arial, sans-serif;
+    font-size: 16px;
+}
+/* Estilos a nuestra clase contenedor */
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin:auto;
+    overflow: hidden;
+}
+/* header */
+header {
+    width: 100%;
+    background: url('../imagenes/copadorada.png')#0c2728;
+    /*ocupa toda la sección de mi contenedor*/
+    background-size: cover;
+    /*imagen fija en donde lo coloques*/
+    background-attachment: fixed;
+    /*alineamos la imagen*/
+    background-position: center 0;
+
+}
+header .logo {
+    width: 50%;
+    max-width: 100px;
+    margin:auto;
+    overflow: left;
+}
+header .contenedor {
+    position: relative;
+    height: 700px;
+}
+header .menu {
+    width: 100%;
+      /*coloca el lugar donde quieras el menu*/
+    text-align: center;
+}
+/*arreglar la etiqueta informacion*/
+header .menu a {
+    color: #000000;
+    /*tamaño de la letra*/
+    font-size: 20px;
+    /* grosor de la letra*/
+    font-weight: 800;
+    /* todas las etiquetas se conviertan de tipo seccion a tipo  bloque*/
+    display: inline-block;
+    /* el espacio del margen 40 arriba abajo, 20 derecha izquierda*/
+    margin: 20px 20px;
+    /* elimina la linea de subrayado de la letra de menu*/
+    text-decoration: none;
+    /* La posicion puede variar en cualquier momento*/
+    position: relative;
+}
+header .menu a:hover {
+    /*hace subrayar las leras del menu al pasar el puntero*/
+    text-decoration: underline;
+    /* el color se puede cambiar con un background color*/
+}
+header .texto {
+    width: 100%;
+    color: #0c0b0b;
+    position: absolute;
+    /*empiece al 50% del contenedor*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+header .texto .nombre {
+    /* tamaño de letra*/
+    font-size: 70px;
+    /* anchura de letra*/
+    font-weight: 600;
+}
+header .texto .nombre span {
+    font-weight: 500;
+}
+header .logo .img {
+    display: flex;
+    align-items: center;     
+    /* Centra verticalmente */
+    justify-content: flex-start; 
+    height: 100px;
+    width: 90px;
+}
+/* ----------MAIN---------- */
+.main {
+    background: url('../imagenes/blanco.jpeg');
+    background-repeat: repeat;
+}
+/* todo lo que pueda salirse del contenedor sea visible */
+.main .informacion .contenedor{
+    overflow: visible;
+    position: relative;
+}
+
+.main .informacion .foto {
+    width: 80%;
+    position: absolute;
+    left: 0;
+    top: -50px;
+    z-index: 0;
+    /* borde sombreado */
+    box-shadow: 0px 0px 15px rgba(0,0,0,.35);
+
+}
+/* Ubicacion y tama;o de la imagen */
+.main .informacion .foto img {
+    vertical-align: top;
+    width: 100%;
+}
+.main .informacion article {
+    background: #fdfdfd;
+    /* define el espacio interior del cuadro de inf */
+    padding: 40px;  
+    width: 50%;
+    position: relative;
+    top: 500px;
+    /* para superponer los elementos */
+    z-index: 1;
+    float: right;
+    /* agrega sobra */
+    box-shadow: 0px 0px 15px rgba(0,0,0,.35);
+    text-align: justify;
+}
+.main .informacion article h3{
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+.main .tabla-posiciones {
+    /* espacio entre el borde superior */
+    padding-top: 570px;
+    /* espacio con la parte inferior */
+    margin-bottom: 50px;
+}
+
+
